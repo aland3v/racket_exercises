@@ -1,8 +1,8 @@
 #lang racket
 ; definiendo valores
 (define Pi 3.1415)
-(define max 50)
-(define min 3)
+(define mimax 50)
+(define mimin 3)
 
 ; halla el cuadrado de x
 (define (cuadrado x)
@@ -30,7 +30,7 @@
 (define (suma_despliega x y)
    (begin
      (display "La suma es: ")
-     (display(+ x y))
+     (display (+ x y))
      )
   )
 
@@ -81,6 +81,11 @@
     (display (max x (max y z)))
     )
   )
+; tener cuidado con que nuestras definiciones
+; no sobreescriban las primitivas
+
+
+
 ; Calcular potencia recursivamente x^y
 ;(define (potencia x y)
   
