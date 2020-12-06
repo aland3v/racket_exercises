@@ -42,3 +42,46 @@
     )
   )
 
+; Perimetro de la circunferencia 2.pi.r
+(define (perimetro r)
+  (begin
+    (display "El perimetro es: ")
+    (display (* 2 Pi r))
+    )
+  )
+
+; Area de la circunferencia pi.r^2
+(define (area r)
+  (begin
+    (display "El area es: ")
+    (display (* Pi r r))
+    )
+  )
+
+; calcular X^3 + Y^2
+(define (func_1 x y)
+  (begin
+    (display "El resultado es: ")
+    (display (+ (* x x x) (* y y)))
+    )
+  )
+
+; calcular f(a) = (a+1)^2 + (a-1)^2
+(define (func_2 a)
+  (begin
+    (display "El resultado es: ")
+    (display (+ (* (+ a 1) (+ a 1)) (* (- a 1) (- a 1))))
+    )
+  )
+
+; funcion que determine el mayor de 3 #'s
+(define (max3 x y z)
+  (begin
+    (display "El maximo es: ")
+    (display (max x (max y z)))
+    )
+  )
+; Calcular potencia recursivamente x^y
+;(define (potencia x y)
+  
+ ; )
