@@ -17,3 +17,14 @@
         )
      )
   )
+
+; imprimir los numeros del 1 al 10 recursivamente
+(define(suma x)
+  (if(= x 10)
+     (display x)
+     (begin
+       (display x)
+       (suma (+ x 1))
+       )
+     )
+  )
