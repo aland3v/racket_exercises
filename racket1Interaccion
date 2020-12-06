@@ -1,0 +1,118 @@
+Welcome to DrRacket, version 7.9 [3m].
+Language: racket, with debugging; memory limit: 128 MB.
+> ( + 2 3)
+5
+> + 2 3
+#<procedure:+>
+2
+3
+> ( + 2 3 )
+5
+> ( + ( * 3 (- 5 3)))
+6
+> ( + ( * 3 (- 5 3)) ( / 8 4))
+8
+> ( * 3 2 1 (-5 3))
+. . application: not a procedure;
+ expected a procedure that can be applied to arguments
+  given: -5
+  arguments...:
+> ( * 3 2 1 (- 5 3))
+12
+> (/ (+ 3 2 1) (- 5 3))
+3
+> (/ (+ 3 2 1 5 5) (- 5 3))
+8
+> ((+) (* 2 (- 5 3)) (/ 8 4))
+. . application: not a procedure;
+ expected a procedure that can be applied to arguments
+  given: 0
+  arguments...:
+> ((+ ) (* 2 (- 5 3)) (/ 8 4))
+. . application: not a procedure;
+ expected a procedure that can be applied to arguments
+  given: 0
+  arguments...:
+> (2 + 2)
+. . application: not a procedure;
+ expected a procedure that can be applied to arguments
+  given: 2
+  arguments...:
+> 8;numero
+8
+> 8 ; un comentario largo
+8
+> (- 9 3) ; numero
+6
+> 'Prueba
+'Prueba
+> 'Aq
+'Aq
+> "Ejemplo de cadena"
+"Ejemplo de cadena"
+> #A ; caracter
+. read-syntax: bad syntax `#A`
+> # \A
+. read-syntax: bad syntax `# `
+> #\A
+#\A
+> (> 4 2)
+#t
+> (< 4 2)
+#f
+> - 3
+#<procedure:->
+3
+> ( -3)
+. . application: not a procedure;
+ expected a procedure that can be applied to arguments
+  given: -3
+  arguments...: [none]
+> -3
+-3
+> ( = 8 -3)
+#f
+> ( = -3 -3)
+#t
+> ( + (* 2 3) 5)
+11
+> ( * (+ 5 2) 3)
+21
+> ( * (+ 1 4) (+ 4 6))
+50
+> ( / (* 3 3) (* 8 2))
+9/16
+> ( + 5 (/ 6 2) 3)
+11
+> (+ 5 (* 3 8) 1)
+30
+> (+ (* (+ 3 4) 8) 2)
+58
+> (/ (+ 3 (- (- 8 2) 4)) 6)
+5/6
+> (+ (* 5 (/ 75 15)) (* 4 (- 4 1)) (* 2 (+ 7 4)))
+59
+> (* (+ (/ 15 (- 8 3)) (* 4 (+ 6 2))) 2)
+70
+> (* (+ 8 3) (- 40 (* 7 4)))
+132
+> abs -3
+#<procedure:abs>
+-3
+> (abs -3)
+3
+> (* 2 (abs -3))
+6
+> ( pow 2 3)
+. . pow: undefined;
+ cannot reference an identifier before its definition
+> (pow 2 3)
+. . pow: undefined;
+ cannot reference an identifier before its definition
+> (sqrt 16)
+4
+> ( + (* 2 2 2) (sqrt 16))
+12
+> (max (max 3 2) (max 8 4))
+8
+> 
